@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Levor Energy</title>
+  <link rel="icon" href="assets/images/favicon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <img src="assets/images/logo.jpg" alt="Levor Energy logo" width="40" height="40" class="rounded-circle border border-2 border-light">
+      <span class="fw-semibold">Levor Energy</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Company</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+        <li class="nav-item"><a class="btn btn-brand ms-lg-2" href="contact.html"><i class="fa-regular fa-paper-plane me-2"></i>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+
+<section class="page-title">
+  <div class="container">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-2">
+      <div>
+        <h1 class="h2 mb-2">Projects</h1>
+        <p class="text-muted mb-0">Selected work and capability highlights.</p>
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Projects</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+      <div>
+        <div class="badge badge-brand mb-2">Filter</div>
+        <div class="btn-group" role="group" aria-label="Project filters">
+          <button type="button" class="btn btn-outline-dark active" data-filter="all">All</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="power">Power</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="oil-gas">Oil &amp; Gas</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="water">Water</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="civil">Civil</button>
+          <button type="button" class="btn btn-outline-dark" data-filter="solar">Solar</button>
+        </div>
+      </div>
+      <a href="contact.html" class="btn btn-brand"><i class="fa-regular fa-handshake me-2"></i>Discuss a project</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-project="power,oil-gas,water">
+        <div class="card card-soft h-100">
+          <img src="assets/images/hero-1.jpg" class="gallery-img p-3" alt="Electrical works">
+          <div class="card-body pt-0 px-4 pb-4">
+            <div class="d-flex flex-wrap gap-2 mb-2">
+              <span class="badge text-bg-light border">EPCC</span>
+              <span class="badge text-bg-light border">Substations</span>
+              <span class="badge text-bg-light border">Powerlines</span>
+            </div>
+            <h3 class="h5">Electrical power system reinstatement</h3>
+            <p class="text-muted mb-0">
+              Capability to reinstate and commission substations, overhead powerlines, transformers, MCCs and associated infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-project="oil-gas">
+        <div class="card card-soft h-100">
+          <img src="assets/images/hero-2.jpg" class="gallery-img p-3" alt="Substation site">
+          <div class="card-body pt-0 px-4 pb-4">
+            <div class="d-flex flex-wrap gap-2 mb-2">
+              <span class="badge text-bg-light border">O&amp;M</span>
+              <span class="badge text-bg-light border">Shutdowns</span>
+              <span class="badge text-bg-light border">Debottlenecking</span>
+            </div>
+            <h3 class="h5">Oil &amp; gas operations &amp; maintenance</h3>
+            <p class="text-muted mb-0">
+              Integrated O&amp;M services from wellhead to manifold — including upgrades, revamps and commissioning support.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-project="water">
+        <div class="card card-soft h-100">
+          <img src="assets/images/team-1.jpg" class="gallery-img p-3" alt="Team at site">
+          <div class="card-body pt-0 px-4 pb-4">
+            <div class="d-flex flex-wrap gap-2 mb-2">
+              <span class="badge text-bg-light border">Treatment</span>
+              <span class="badge text-bg-light border">RO</span>
+              <span class="badge text-bg-light border">Commissioning</span>
+            </div>
+            <h3 class="h5">Water treatment plant support</h3>
+            <p class="text-muted mb-0">
+              Water system engineering and support services, including treatment plant infrastructure and operations readiness.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-project="civil">
+        <div class="card card-soft h-100">
+          <div class="card-body p-4">
+            <div class="icon-pill mb-3"><i class="fa-solid fa-helmet-safety"></i></div>
+            <h3 class="h5">Civil works &amp; fabrication</h3>
+            <p class="text-muted mb-0">
+              Civil works, mechanical manufacturing and on-site execution aligned to safety and quality requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-project="solar">
+        <div class="card card-soft h-100">
+          <div class="card-body p-4">
+            <div class="icon-pill mb-3"><i class="fa-solid fa-solar-panel"></i></div>
+            <h3 class="h5">Solar engineering</h3>
+            <p class="text-muted mb-0">
+              Solar energy engineering services for commercial and industrial applications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-project="power">
+        <div class="card card-soft h-100">
+          <div class="card-body p-4">
+            <div class="icon-pill mb-3"><i class="fa-solid fa-tower-cell"></i></div>
+            <h3 class="h5">ICT &amp; networking solutions</h3>
+            <p class="text-muted mb-0">
+              Complex IT and computer networking solutions supporting operations and project sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+<footer class="footer mt-5 pt-5 pb-4 bg-dark text-white-50">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <img src="assets/images/logo.jpg" alt="Levor Energy logo" width="44" height="44" class="rounded-circle border border-2 border-light">
+          <div>
+            <div class="h5 text-white mb-0">Levor Energy Technologies (U) Ltd</div>
+            <small class="text-white-50">Powering Africa</small>
+          </div>
+        </div>
+        <p class="mb-0">
+          Civil, Electrical, Mechanical, Water, Oil &amp; Gas engineering contractor delivering safe, quality EPCC solutions.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="h6 text-white">Quick Links</div>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="about.html">Who we are</a></li>
+          <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="services.html">What we do</a></li>
+          <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="projects.html">Projects</a></li>
+          <li class="mb-2"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="media.html">Media</a></li>
+          <li><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="h6 text-white">Contact</div>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i>Plot no.1115, Levor Lane, next to St. Lawrence University &amp; behind Miracle Center Cathedral, Rubaga – Kampala</li>
+          <li class="mb-2"><i class="fa-solid fa-envelopes-bulk me-2"></i><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:engineering@levorenergy.com">engineering@levorenergy.com</a></li>
+          <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:+256704743642">+256 704 743 642</a> / <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:+256700499565">+256 700 499 565</a></li>
+          <li><i class="fa-solid fa-globe me-2"></i><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="https://levorenergy.com/" target="_blank" rel="noopener">levorenergy.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-secondary my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 small">
+      <div>© <span id="year"></span> Levor Energy Technologies (U) Ltd. All rights reserved.</div>
+      <div class="d-flex align-items-center gap-3">
+        <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
