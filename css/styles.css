@@ -97,6 +97,190 @@ body {
   color: var(--brand);
 }
 
+.hero-slideshow {
+  position: relative;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+}
+
+/* Dark overlay so text stays readable */
+.hero-slideshow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(11, 18, 32, .88), rgba(11, 18, 32, .35));
+  z-index: 0;
+}
+
+/* keep content above overlay */
+.hero-slideshow .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* optional: smooth fade effect */
+.hero-slideshow.fade-bg {
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* Multi-level dropdown */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  border-radius: 1rem;
+}
+
+.dropdown-menu {
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.dropdown-item {
+  border-radius: .75rem;
+}
+
+/* Desktop hover open (optional) */
+@media (min-width: 992px) {
+  .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+  }
+}
+
+/* CORE VALUES – exciting but professional */
+.core-value {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.core-value .fw-semibold {
+  font-size: 1.05rem;
+}
+
+.core-value .small {
+  opacity: .9;
+}
+
+/* Hover effect */
+.core-value:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+}
+
+/* Individual gradients */
+.cv-safety {
+  background: linear-gradient(135deg, #0f9b8e, #2dd4bf);
+}
+
+.cv-professional {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+}
+
+.cv-innovation {
+  background: linear-gradient(135deg, #7c3aed, #c084fc);
+}
+
+.cv-community {
+  background: linear-gradient(135deg, #059669, #34d399);
+}
+
+.cv-customer {
+  background: linear-gradient(135deg, #f59e0b, #facc15);
+  color: #1f2937;
+}
+
+/* Optional subtle glow overlay */
+.core-value::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, .35), transparent 60%);
+  pointer-events: none;
+}
+
+/* SMALL CORE VALUE CARDS */
+.core-value-sm {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0,0,0,.15);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.core-value-sm:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0,0,0,.22);
+}
+
+.core-value-sm .fw-semibold {
+  font-size: 1.05rem;
+}
+
+.core-value-sm .small {
+  opacity: .92;
+}
+
+/* Gradient themes */
+.cv-safety {
+  background: linear-gradient(135deg, #0ea5e9, #22d3ee);
+}
+
+.cv-development {
+  background: linear-gradient(135deg, #16a34a, #4ade80);
+}
+
+.cv-customer {
+  background: linear-gradient(135deg, #f59e0b, #fde047);
+  color: #1f2937;
+}
+
+/* Glow highlight */
+.core-value-sm::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255,255,255,.35), transparent 60%);
+  pointer-events: none;
+}
+
+.navbar .nav-link.active {
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* Optional: Add styling for the image container */
+.card-img-top {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-img-top img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Maintain the soft card styling */
+.card-soft {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
 #levorHeroCarousel img {
   height: 200px;
   /* adjust as needed */
